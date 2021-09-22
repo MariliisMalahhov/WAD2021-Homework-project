@@ -3,20 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <title>postIt!</title>
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="Index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
+
   <body>
     <header class="header">
-      <div class="search-container">
-        <img class="logo" src="res/images/postit.jpg" height="30" />
-        <input type="text" /><button>Search</button>
-        <img
-          class="user-icon"
-          src="res/images/unknown-person-icon-4.jpg"
-          height="30"
-        />
-      </div>
+      <nav>
+        <div>
+          <img src="res/images/postit.jpg" alt="PostIt" height="30" />
+        </div>
+
+        <div class="search-container">
+          <input type="text" /><button>Search</button>
+        </div>
+        <div>
+          <img
+            src="res/images/unknown-person-icon-4.png"
+            alt="UserIcon"
+            height="30"
+          />
+        </div>
+      </nav>
     </header>
 
     <section>
@@ -24,32 +32,46 @@
         <ul>
           <li>
             <div class="post">
-              <img
-                class="user_icon"
-                src="res/images/unknown-person-icon-4.jpg"
-                height="30"
-              />
-              <div class="post-date">Sep 18, 2020 15:16</div>
-              <img class="post-image" src="res/images/HL2E2.jpg" />
-              <div class="post-text">I think it's going to rain</div>
-              <button>
-                <img src="res/images/thumbs_up.png" height="20" />
-              </button>
-            </div>
-          </li>
-          <li>
-            <div class="post">
-              <img
-                class="user_icon"
-                src="res/images/unknown-person-icon-4.jpg"
-                height="30"
-              />
-              <div class="post-date">Sep 18, 2020 15:16</div>
-              <div class="post-text">
-                Which weighs more, a pound of feathers or a pound of bricks?<br />
-                A pound of feathers because you have to carry the feathers and
-                the weight of what you did to those poor birds
+              <div class="post-header">
+                <img
+                  src="res/images/unknown-person-icon-4.png"
+                  alt="Person"
+                  height="30"
+                />
+                <h5>Sep 18, 2020 15:16</h5>
               </div>
+              <img
+                class="post-image"
+                src="res/images/HL2E2.jpg"
+                alt="Stormy day"
+              />
+              <p id="post-text">I think it's going to rain</p>
+              <button>
+                <img
+                  src="res/images/thumbs_up.png"
+                  alt="Thumbs up"
+                  height="20"
+                />
+              </button>
+            </div>
+          </li>
+          <li>
+            <div class="post">
+              <div class="post-header">
+                <img
+                  class="user_icon"
+                  src="res/images/unknown-person-icon-4.png"
+                  height="30"
+                />
+                <h5>Sep 18, 2020 15:16</h5>
+              </div>
+              <p id="post-text">
+                Which weighs more, a pound of feathers or a pound of bricks?
+              </p>
+              <p id="post-text">
+                A pound of feathers because you have to carry the feathers and
+                the weight of what you did to those poor birds.
+              </p>
               <button>
                 <img src="res/images/thumbs_up.png" height="20" />
               </button>
@@ -57,14 +79,20 @@
           </li>
           <li>
             <div class="post">
+              <div class="post-header">
+                <img
+                  class="user_icon"
+                  src="res/images/unknown-person-icon-4.png"
+                  height="30"
+                />
+                <h5>Sep 18, 2020 17:18</h5>
+              </div>
               <img
-                class="user_icon"
-                src="res/images/unknown-person-icon-4.jpg"
-                height="30"
+                class="post-image"
+                src="res/images/batman.jpeg"
+                alt="Picture of Batman"
               />
-              <div class="post-date">Sep 18, 2020 17:18</div>
-              <img class="post-image" src="res/images/batman.jpeg" />
-              <div class="post-text">Felt cute, might delete later</div>
+              <p id="post-text">Felt cute, might delete later</p>
               <button>
                 <img src="res/images/thumbs_up.png" height="20" />
               </button>
